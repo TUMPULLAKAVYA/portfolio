@@ -1,4 +1,3 @@
-/* Reveal */
 const reveals = document.querySelectorAll('.reveal');
 const evaporateEls = document.querySelectorAll('.evaporate');
 
@@ -19,12 +18,10 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* Dark Mode */
 function toggleTheme() {
   document.body.classList.toggle('dark');
 }
 
-/* Contact Form */
 document.querySelector('.contact-form').addEventListener('submit', e => {
   e.preventDefault();
   document.querySelector('.success').style.display = 'block';
