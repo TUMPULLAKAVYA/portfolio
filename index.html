@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kavya | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🌙☀️ THEME TOGGLE -->
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<!-- 🌈 Animated Background Blobs -->
+<div class="blobs">
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+</div>
+
+<nav>
+  <h2 class="logo">Kavya</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="home reveal">
+  <h1>Hello, I’m <span>Kavya</span></h1>
+  <p>Aspiring Software Developer | MERN Stack | Cloud Learner</p>
+  <div class="buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#" class="btn-outline">Download Resume</a>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <div class="about-box glass">
+    <img src="images/profile.jpg">
+    <p>
+      Computer Science student passionate about building elegant, scalable,
+      and user-friendly web applications with modern UI.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skill-grid">
+    <div class="skill-card">C</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">HTML & CSS</div>
+    <div class="skill-card">React</div>
+    <div class="skill-card">Node.js</div>
+    <div class="skill-card">MongoDB</div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">Electricity Billing System</div>
+    <div class="project-card">Online Appointment System</div>
+    <div class="project-card">Spending Partner</div>
+  </div>
+</section>
+
+<section id="certifications" class="reveal">
+  <h2>Certifications</h2>
+  <div class="timeline">
+    <div class="timeline-item glass"><span>2025</span> MERN Full Stack Internship</div>
+    <div class="timeline-item glass"><span>2025</span> Python Essentials – Cisco</div>
+    <div class="timeline-item glass"><span>2024</span> Cloud Computing – Infosys</div>
+  </div>
+</section>
+
+<!-- 📩 Animated Contact Form -->
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <form class="contact-form glass">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message ✨</button>
+    <p class="success">Message sent successfully 💖</p>
+  </form>
+</section>
+
+<footer>
+  © 2026 Kavya | Designed with 💖
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
