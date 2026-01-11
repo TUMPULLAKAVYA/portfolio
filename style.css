@@ -339,3 +339,94 @@ footer {
   .home h1 { font-size: 2rem; }
   .btn, .btn-outline { width: 100%; }
 }
+/* ================= CONTACT SECTION ================= */
+#contact {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: auto;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 26px;
+  box-shadow: 0 22px 45px rgba(214,51,132,0.15);
+}
+
+/* Inputs & textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(214,51,132,0.25);
+  font-size: 0.95rem;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+  transition: 0.3s ease;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d63384;
+  box-shadow: 0 0 0 3px rgba(214,51,132,0.15);
+}
+
+/* Submit button */
+.contact-form button {
+  padding: 14px;
+  border-radius: 32px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: linear-gradient(135deg,#d63384,#ff8fb1);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 12px 25px rgba(214,51,132,0.35);
+}
+
+.contact-form button:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(214,51,132,0.45);
+}
+
+/* Success message */
+.success {
+  display: none;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #d63384;
+  animation: fadeUp 0.6s ease;
+}
+
+/* ================= DARK MODE CONTACT ================= */
+body.dark .contact-form {
+  background: rgba(30,30,30,0.85);
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background: rgba(20,20,20,0.9);
+  color: #eee;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+body.dark .success {
+  color: #ff8fb1;
+}
